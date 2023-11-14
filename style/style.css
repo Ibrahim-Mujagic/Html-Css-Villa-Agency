@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--main-font);
+}
+
+.d-flex-{
+  display: flex;
+}
+
+.d-flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-flex-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-center{
+  width: 85%;
+  margin: auto;
+}
+
+.cont-links{
+  min-height: 40px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px 15px;
+  border-bottom: 1px solid rgba(174, 175, 171, 0.5);
+  background-color: var(--card-villas-bg);
+}
+
+.mails-map,.mail-position,.links{
+  display: flex;
+}
+
+.mail-position{
+
+  i{
+    margin-left: 20px;
+    color: var(--main-orange);
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  p{
+    font-weight: 100;
+    font-size: 13px;
+    cursor: pointer;
+  }
+}
+
+.links .icon{
+  height: 25px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--paragraph-gray);
+  margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer; 
+  i{
+    font-size: 15px;
+  }
+}
+
+
+/* LINKS - MAIL - FINE */
+
+header{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo{
+  width: 40%;
+  display: flex;
+  padding: 0px 20px;
+  h3{
+    margin-left: 20px;
+    font-size: 23px;
+  }
+}
+
+header .menu{
+  width: 60%;
+}
+
+header .menu{
+  ul{
+    display: flex;
+    justify-content: center;
+    gap: 0px 15px;
+
+    .active{
+      color: var(--main-orange);
+    }
+
+    li{
+      display: flex;
+      align-items: center;
+
+      a{
+        color: var(--title-color);
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+
+      div{
+        background-color: var(--title-color);
+        border-radius: 30px;
+
+        .cont-icon{
+          height: 25px;
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+          background-color: var(--main-orange);
+
+          i{
+            color: #FFFFFF;
+            font-size: 13px;
+          }
+        }
+        
+        .schedule{
+            color: #FFFFFF;
+            border-radius: 20px;
+            font-size: 12px;
+            padding-right: 10px;
+            margin: 5px 10px;
+        }
+      }
+    }
+  }
+}
