@@ -1,0 +1,69 @@
+@media screen and (max-width:780px) {
+ .cont-inside-links{
+  flex-direction: column;
+  
+  .mails-map,.links{
+    margin: 5px 0;
+  }
+  }
+
+  /*  LINKS - MAIL FINE */
+
+  header{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .logo,.menu{
+      width: 100%;
+      justify-content: center;
+    }
+  } 
+
+  /* FINE HEADER */
+
+
+}
+
+
+@media screen and (max-width:568px){
+  .mails-map{
+    flex-direction: column;
+   
+    .mail-position:last-child{
+      display: none;
+    }
+  }
+  /*  LINKS - MAIL FINE */
+  header{
+    
+    .logo{
+      padding: 0;
+
+      h3{
+        margin: 0;
+      }
+    }
+    
+    ul{
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      li{
+        margin-bottom: 4px;
+      }
+    }
+  }
+  /* FINE HEADER */
+  .jumbotron{
+    .place,h2,.dots{
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+  }
+}
