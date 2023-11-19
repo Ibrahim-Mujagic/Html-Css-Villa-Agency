@@ -23,15 +23,100 @@
 
   /* FINE HEADER */
 
+  .container-center-small{
+    .best-aptmt-container{
+      .best-aptmt-show{
+        flex-direction: column;
+        align-items: center;
+        .cont-best-aptmt-image{
+          margin-bottom: 40px;
+          img{
+            width: 100%;
+          }
+        }
+        .cont-aptmt-show{
+          .marker{
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+
+    /* FINE BEST APPARTMENT */
+
+  
+  .cont-closer-view{
+    .background-c-v{
+      .blur{
+        .container-center-tiny{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+/* FINE CLOSER VIEW */
+}
+
+@media screen and (max-width:1190px) {
+  .container-center-small{
+    width: 95%;
+  }
+ 
+  .best-aptmt-container{
+    flex-direction: column;
+    align-items: center;
+
+    .best-aptmt-show{
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 40px;
+
+    }
+
+
+    .best-aptmt-detail{
+      min-width: 100%;
+      flex-direction: row;
+      .border-separator{
+        padding: 0;
+        border: 0px;
+      }
+  
+      .best-atpmt-detail-card{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: calc(100% / 4);
+        text-align: center;
+      }
+    }
+  }
+    /* FINE BEST APPARTMENT */
+      
+  .cont-closer-view{
+    .background-c-v{
+      .blur{
+        .container-center-tiny{
+          width: 90%;
+        
+          .cont-video-c-v{
+            height: 490px;
+            background-position-x: 30%;
+          }
+        }
+      }
+    }
+  }
+/* FINE CLOSER VIEW */
 
 }
 
 
 @media screen and (max-width:568px){
   .mails-map{
-    flex-direction: column;
-   
-    .mail-position:last-child{
+    div:last-child{
       display: none;
     }
   }
@@ -60,10 +145,67 @@
   }
   /* FINE HEADER */
   .jumbotron{
+    margin-bottom: 25px;
+  
     .place,h2,.dots{
       left: 50%;
       transform: translateX(-50%);
       text-align: center;
     }
+  }  
+  /* FINE JUMBOTRON */
+
+  .container-center-small{
+    
+    .best-aptmt-container{
+      align-items: center;
+    
+      .best-aptmt-show{
+        padding: 0;
+        flex-direction: column;
+
+        .cont-best-aptmt-image{
+          width: 80%;
+          margin: 20px auto;
+
+          img{
+            width:100%;
+          }
+
+
+        }
+      
+        .cont-aptmt-show{
+          text-align: center;
+      
+          .marker{
+            text-align: right;
+          }
+
+          .card-aptmt-show{
+            margin: 20px auto;
+          }
+        }
+      
+      }
+
+      .border-separator{
+        padding-bottom: 9px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.268);
+      }
+
+      .best-aptmt-detail{
+        flex-direction: column;
+     
+        .best-atpmt-detail-card{
+          flex-direction: row;
+          width: 100%;
+
+        }
+      }
   }
+  }
+  /* FINE CLOSER VIEW */
 }
+
+

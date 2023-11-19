@@ -27,6 +27,7 @@ body{
 .container-center{
   width: 92%;
   margin: auto;
+  max-width: 1300px;
 }
 
 .cont-links{
@@ -155,7 +156,7 @@ header .menu{
   .jumbotron{
     height: 550px;
     position: relative;
-    
+    margin-bottom: 100px;
     img{
       width: 100%;
       height: 100%;
@@ -180,7 +181,7 @@ header .menu{
       left: 100px;
       color: #FFFFFF;
       font-size: 2.1rem;
-      
+      text-transform: uppercase;
       span{
         display: block;
       }
@@ -192,6 +193,7 @@ header .menu{
       left: 100px;
       display: flex;
       gap: 0px 20px;
+      
       .dot{
         height: 10px;
         width: 10px;
@@ -205,3 +207,265 @@ header .menu{
     }
 
   }
+/* FINE JUMBOTRON */
+
+.container-center-small{
+  width: 82%;
+  margin: auto;
+}
+
+.best-aptmt-container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.marker{
+  color: var(--marker-color);
+}
+
+.border-separator{
+  padding-bottom: 9px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.268);
+}
+
+.best-aptmt-show{
+  height: 70%;
+  width: 70%;
+  display: flex;
+  padding: 15px;
+  
+  .cont-best-aptmt-image{
+    height: 400px;
+    position: relative;
+    
+    img{
+      height: 100%;
+      width: 300px;
+      object-fit: cover;
+    }
+  
+    .icon-aptmt{
+      position: absolute;
+      top: 100%;
+      left: 0%;
+      transform: translate(-50% ,-50%);
+      height: 50px;
+      width: 50px;
+      background-color: var(--main-orange);
+      border-radius: 50%;
+      i{
+        font-size: 1.5rem;
+        color: #FFFFFF;
+      }
+    }
+
+  }
+
+  .cont-aptmt-show{
+    margin-left: 20px;
+      
+      .aptmt-show-title{
+        margin-top: 10px;
+        font-size: 2.1rem;
+    
+        span{
+          display: block;
+        }
+      }
+    
+      .card-aptmt-show{
+        background-color: var(--card-villas-bg);
+        padding: 16px;
+        .cont-title-card{
+          height: 70%;
+          
+          .card-aptmt-show-title{
+            color: var(--main-orange);
+            font-size: 0.9rem;
+            font-weight: 500;
+      
+          }
+
+          .card-aptmt-show-desc{
+            margin: 15px 0px;
+            color: rgba(0, 0, 0, 0.602);
+            font-size: 1rem;
+            font-weight: 300;
+
+          }
+        }
+
+        .card-quest{
+          height: 30%;
+
+          div:last-child{
+            padding: 9px 0px;
+          }
+
+          div{
+            height: calc(100% / 2);
+          
+            a{
+              color: rgba(0, 0, 0, 0.602);
+              text-decoration: none;
+              font-weight: 300;
+            }
+          
+          }
+        }
+      }
+  }
+}
+
+.best-aptmt-detail{
+  width: 30%;
+  max-width: 300px;
+  padding: 20px 15px;
+  box-shadow: 0px 0px 7px #00000033;
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0px;
+  
+  .best-atpmt-detail-card{
+    display: flex;
+    
+    i{
+        color: var(--main-orange);
+        font-size: 2.5rem;
+        margin-right: 10px;
+      }
+      
+      .detail-text{
+        p{
+          font-size: 0.8rem;
+          color: var(--paragraph-gray);
+          margin-top: 5px;
+        }
+      }
+  }
+
+}
+
+/* FINE BEST APPARTMENT */
+
+.cont-closer-view{
+  
+  .background-c-v{
+  height: 500px;
+  background-image: url('../Image/Appartment-Inside2.jpg');
+  background-position-y: 75%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items:end;
+  position: relative;
+  
+  .blur{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgba(64, 63, 63, 0.4);
+    backdrop-filter: blur(5px);
+
+    .container-center-tiny{
+      z-index: 10;
+      width: 75%;
+      margin: auto;
+      padding-top: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .marker{
+        text-align: center;
+        margin-bottom: 8px;
+      }
+      .title-c-v{
+        margin-bottom: 30px;
+        text-align: center;
+        h3{
+          font-size: 1.9rem;
+          color: #FFFFFF;
+          span{
+            display: block;
+          }
+        }
+      }
+        .cont-video-c-v{
+          height: 420px;
+          width: 90%;
+          margin-bottom: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-image: url('../Image/ab-partners-midtown-apartment--modern-interior-design-apartments-archello.1631083770.83.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position-y: 72%;
+          border-radius: 15px;
+
+          .c-v-video-icon{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: rgba(241, 85, 43, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.9rem;
+            cursor: pointer;
+            i{
+              color: #FFFFFF;
+            }
+          }
+        }
+
+        .cont-c-v-cards{
+          width: 100%;
+          display: flex;          
+          gap: 20px;
+          flex-wrap: wrap;
+
+          .card-c-v{
+            height: 100px;
+            padding: 10px;
+            min-width: 300px;
+            border-radius: 10px;
+            background-color: var(--card-orange);
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0px 20px;
+            margin: 10px auto;
+
+            .card-c-v-num{
+              font-size: 2rem;
+              font-weight: 700;
+              color: var(--main-orange);
+            }
+            
+            .card-c-v-text{
+              color: #000000;
+              font-weight: 500;
+            }
+
+            .card-c-v-icon{
+              position: absolute;
+              top: 0%;
+              left: 100%;
+              transform: translate(-50% ,-50%);
+              font-size: 1.8rem;
+              color: var(--main-orange);
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* FINE CLOSER VIEW */
