@@ -1,7 +1,7 @@
 # Html-Css-Villa-Agency
 ## Fatto con HTML,CSS </br> 
 ### Riproduzione del layout di un agenzia immobiliare </br>
-Andando nella cartella "Risultato" ci sono gli screen della versione di Desktop,Tablet e Smartphone </br>
+Andando nella cartella "<strong>Risultato</strong>" ci sono gli screen della versione di Desktop,Tablet e Smartphone </br>
 
 ## *SPERO CHE VI PIACCIA*
 ibrahimmujagic18@gmail.com
