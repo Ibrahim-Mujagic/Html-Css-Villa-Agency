@@ -361,7 +361,8 @@ header .menu{
   justify-content: center;
   align-items:end;
   position: relative;
-  
+  margin-bottom: 500px;
+
   .blur{
     width: 100%;
     height: 100%;
@@ -370,7 +371,8 @@ header .menu{
     left: 0;
     background-color: rgba(64, 63, 63, 0.4);
     backdrop-filter: blur(5px);
-
+    z-index: 1;
+ 
     .container-center-tiny{
       z-index: 10;
       width: 75%;
@@ -387,9 +389,11 @@ header .menu{
       .title-c-v{
         margin-bottom: 30px;
         text-align: center;
+   
         h3{
           font-size: 1.9rem;
           color: #FFFFFF;
+    
           span{
             display: block;
           }
@@ -418,6 +422,7 @@ header .menu{
             align-items: center;
             font-size: 1.9rem;
             cursor: pointer;
+   
             i{
               color: #FFFFFF;
             }
@@ -469,3 +474,427 @@ header .menu{
   }
 }
 /* FINE CLOSER VIEW */
+.cont-choice-aptmt{
+  width: 100%;
+  background-color: var(--card-villas-bg);
+  padding: 20px;
+  z-index: 1;
+
+  .choice-aptmt-header{
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+    .choice-aptmt-title{
+      padding: 20px;      
+   
+      .marker{
+        margin-bottom: 15px;
+      }
+    
+      h3{
+        font-size: 2rem;
+        span{
+          display: block;
+        }
+
+      }
+    }
+    
+    .choice-aptmt-buttons{
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      gap: 8px;
+
+      button{
+        padding: 10px 15px;
+        background-color: black;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 5px;
+      }    
+     
+      button:hover{
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .btn-active{
+        background-color: var(--main-orange);
+      }
+
+    }
+  }
+
+  .cont-choice-aptmt-cards{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  
+    .cont-info-picture{
+      width: 70%;
+      display: flex;
+      justify-content: space-evenly;
+
+    }
+    .choice-aptmt-card-info{
+      width: 45%;
+      ul{
+        box-shadow: 0px 0px 7px #00000033;
+    
+        li{
+          display: flex;
+          justify-content: space-between;
+          gap: 0px 14px;
+          padding: 15px 20px;
+          margin: 10px 0px;
+          border-bottom: 1px solid #0000001c;
+          list-style: none;
+
+          p{
+            color: var(--paragraph-gray);
+          }
+        }
+      }
+    }
+    .choice-aptmt-picture{
+      width: calc(100% / 3 + 105px );
+
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .choice-aptmt-card-desc{
+      padding-left: 20px;
+      width: calc(100% / 3 - 40px);
+      display: flex;
+      flex-direction: column;
+      gap: 10px 0px;
+  
+      h6{
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+      }
+   
+      p{
+        color: rgba(0, 0, 0, 0.602);
+        line-height: 28px;
+      }
+
+      div{
+        background-color: #000000;
+        width: 180px;
+        height: 35px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+   
+        .cont-icon{
+          width: 20%;
+      
+          i{
+            height: 37px;
+            aspect-ratio: 1/1;
+            color: #FFFFFF;
+            background-color: var(--main-orange);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+   
+        p{
+          padding-left: 10px;
+          width: 80%;
+          color: #FFFFFF;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+/* FINE BEST DEAL */
+
+.container-center{
+ 
+  .cont-aptmts-toSell{
+    margin-bottom: 100px;
+    .aptmts-toSell-header{
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px 0px;
+      text-align: center;
+      margin-bottom: 30px;
+   
+      h3{
+        font-size: 1.6rem;
+        span{
+          display: block;
+        }
+      }
+    }
+    .cont-cards-aptmts-toSell{
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+     
+      .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% / 3 - 120px);
+        min-width: 300px;
+        background-color: var(--card-villas-bg);
+        padding: 25px;
+        border-radius: 8px;
+     
+        .image{
+          width: 100%;
+          height: 60%;
+       
+          img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+          }
+        }
+        .price-type{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 10px;
+
+          .type{
+            background-color: var(--card-orange);
+            padding: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+          }
+      
+          .price{
+            color: var(--main-orange);
+          }
+        }
+      
+        .title-card{
+          font-size: 1.4rem;
+          margin-bottom: 15px;
+          width: 100%;
+
+        }
+      
+        .data-aptmt{
+          display: flex;
+          flex-direction: column;
+          align-items: center;          
+       
+          ul{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 25px;
+
+            li{
+              font-weight: 300;
+         
+              span{
+                font-weight: 500;
+                margin: 0px 9px;
+              }
+            }
+          }
+        
+          button{
+            padding: 7px 10px;
+            border-radius: 14px;
+            border: none;
+            background-color: #000000;
+            color: #FFFFFF;
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}
+/* FINE APPARTMENTS CARDS */
+
+.cont-get-in-touch{
+  width: 100%;
+
+  .background-get-in-touch{
+    height: 500px;
+    background-image: url('../Image/house-outside.jpg');
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 400px;
+
+    .blur{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top:0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(7px);
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 300px;
+      
+      .cont-data-get-in-touch{
+        width: 80%;
+        min-height: 400px;
+        padding: 10px;
+       
+        .get-in-touch-header{
+          text-align: center;
+          margin-bottom: 70px;
+     
+          h3{
+            font-size: 2rem;
+            color: #FFFFFF;
+
+            span{
+              display: block;
+            }
+          }
+        }
+
+        .get-in-touch-cont-form-position{
+          display: flex;
+          gap: 15px;
+       
+          .cont-position-info{
+            width: 50%;
+        
+            img{
+              width: 100px; height: 100px;
+            }
+        
+            .position{
+              width: 100%;
+              height: 70%;
+              margin-bottom: 20px;
+            
+              img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .cont-info{
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              flex-wrap: wrap;
+
+              .info{
+                width: calc(100% / 2 - 25px);
+                min-width: 240px;
+                background-color: #FFFFFF;
+                padding: 15px;
+                border-radius: 3px;
+                box-shadow:  0px 0px 7px #00000033;
+                display: flex;
+                align-items: center;
+                gap: 0px 15px;
+                margin: 15px auto;
+                
+                i{
+                  color: var(--main-orange);  
+                  font-size: 2rem;
+                }
+
+                p{
+                  color: var(--paragraph-gray);
+                  font-size: 0.9rem;
+                }
+              }
+            }
+          }
+          form{
+            width: 50%;
+            max-width: 400px;
+            background-color: #FFFFFF;
+            border-radius: 6px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-shadow:  0px 0px 7px #00000033;
+       
+            label{
+              margin-top: 14px;
+            }
+
+            label:first-child{
+              margin-top: 4px;
+            }
+
+            input,textarea{
+              padding: 8px;
+              border-radius: 8px;
+              background-color: rgba(128, 128, 128, 0.11);
+              border: none;
+              outline: none;
+              border: 2px solid transparent;
+            }
+
+            textarea{
+              margin-bottom: 14px;
+              resize: none;
+            }
+
+           input:focus,textarea:focus{
+              border: 2px solid var(--main-orange);
+            }
+            
+            button{
+              height: 30px;
+              width: 110px;
+              font-size: 0.7rem;
+              align-self:flex-start;
+              border: none;
+              border-radius: 22px;
+              background-color: #000000;
+              color: #FFFFFF;
+              cursor: pointer;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+  /* FINE GET IN TOUCH */
+
+  footer{
+    background-color: black;
+    height: 90px;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 90px;
+  }

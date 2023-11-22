@@ -1,64 +1,3 @@
-@media screen and (max-width:780px) {
- .cont-inside-links{
-  flex-direction: column;
-  
-  .mails-map,.links{
-    margin: 5px 0;
-  }
-  }
-
-  /*  LINKS - MAIL FINE */
-
-  header{
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .logo,.menu{
-      width: 100%;
-      justify-content: center;
-    }
-  } 
-
-  /* FINE HEADER */
-
-  .container-center-small{
-    .best-aptmt-container{
-      .best-aptmt-show{
-        flex-direction: column;
-        align-items: center;
-        .cont-best-aptmt-image{
-          margin-bottom: 40px;
-          img{
-            width: 100%;
-          }
-        }
-        .cont-aptmt-show{
-          .marker{
-            text-align: right;
-          }
-        }
-      }
-    }
-  }
-
-    /* FINE BEST APPARTMENT */
-
-  
-  .cont-closer-view{
-    .background-c-v{
-      .blur{
-        .container-center-tiny{
-          width: 100%;
-        }
-      }
-    }
-  }
-
-/* FINE CLOSER VIEW */
-}
-
 @media screen and (max-width:1190px) {
   .container-center-small{
     width: 95%;
@@ -79,6 +18,7 @@
     .best-aptmt-detail{
       min-width: 100%;
       flex-direction: row;
+  
       .border-separator{
         padding: 0;
         border: 0px;
@@ -96,8 +36,12 @@
     /* FINE BEST APPARTMENT */
       
   .cont-closer-view{
+    
     .background-c-v{
+      margin-bottom: 600px;
+
       .blur{
+      
         .container-center-tiny{
           width: 90%;
         
@@ -110,7 +54,170 @@
     }
   }
 /* FINE CLOSER VIEW */
+  .cont-choice-aptmt{
+  
+    .container-center-small{
+    
+      .cont-choice-aptmt-cards{
+        flex-direction: column;
+      
+        .cont-info-picture{
+          width: 100%;
+          margin-bottom: 40px;
+        }
+      
+        .choice-aptmt-card-desc{
+          width: 100%;
+          margin: auto;
+    
+        }
+      }
+    }
+  }
+/* FINE BEST DEAL */
 
+  .cont-get-in-touch{
+   
+    .background-get-in-touch{
+  
+      .blur{
+   
+        .cont-data-get-in-touch{
+          width: 95%;
+        }
+      }
+    }
+  }
+  /* FINE GET IN TOUCH */
+}
+
+
+
+
+@media screen and (max-width:780px) {
+ .cont-inside-links{
+  flex-direction: column;
+  
+    .mails-map,.links{
+      margin: 5px 0;
+    }
+  }
+
+  /*  LINKS - MAIL FINE */
+
+  header{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .logo,.menu{
+      width: 100%;
+      justify-content: center;
+    }
+  } 
+
+  /* FINE HEADER */
+
+  .container-center-small{
+    
+    .best-aptmt-container{
+    
+      .best-aptmt-show{
+        flex-direction: column;
+        align-items: center;
+       
+        .cont-best-aptmt-image{
+          margin-bottom: 40px;
+         
+          img{
+            width: 100%;
+          }
+        }
+        
+        .cont-aptmt-show{
+         
+          .marker{
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+
+    /* FINE BEST APPARTMENT */
+
+  
+  .cont-closer-view{
+    
+    .background-c-v{
+      margin-bottom: 700px;
+      
+      .blur{
+      
+        .container-center-tiny{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+/* FINE CLOSER VIEW */
+  .cont-choice-aptmt{
+  
+    .container-center-small{
+  
+      .choice-aptmt-header{
+        flex-direction: column;
+      }
+    
+      .cont-choice-aptmt-cards{
+        width: 80%;
+        margin: auto;
+      
+        .cont-info-picture{
+          flex-direction: column-reverse;
+          align-items: center;
+          gap: 20px 0px;
+      
+          .choice-aptmt-card-info,.choice-aptmt-picture{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+/* FINE BEST DEAL */
+  .cont-get-in-touch{
+    margin-bottom: 750px;
+    
+    .background-get-in-touch{
+    
+      .blur{
+        padding-top: 500px;
+      
+        .cont-data-get-in-touch{
+          padding-top: 245px;        
+        
+          .get-in-touch-cont-form-position{
+            flex-direction: column;
+            align-items: center;
+          
+            .cont-position-info{
+              width: 90%;
+
+            }   
+
+            form{
+              min-width: 90%;
+            }
+    
+          }
+        }
+      }
+    }
+  }
+  /* FINE GET IN TOUCH */
 }
 
 
@@ -203,9 +310,62 @@
 
         }
       }
+    }
   }
+  .cont-closer-view{
+    
+    .background-c-v{
+      margin-bottom: 730px ;
+    }
   }
   /* FINE CLOSER VIEW */
+  .cont-choice-aptmt{
+  
+    .container-center-small{
+   
+      .cont-choice-aptmt-cards{
+        width: 100%;
+      }
+    }
+  }
+/* FINE BEST DEAL */
+
+  .container-center{
+  
+    .cont-aptmts-toSell{
+    
+      .cont-cards-aptmts-toSell{
+    
+        .card{
+          width: 100%;
+          max-width: 400px;
+        }
+      }
+    }
+  }
+/* FINE APPARTMENTS CARDS */
+
+  .cont-get-in-touch{
+    .background-get-in-touch{
+    
+      .blur{
+      
+        .cont-data-get-in-touch{
+        
+          .get-in-touch-cont-form-position{
+          
+            .cont-position-info{
+              
+              .cont-info{
+                .info{
+                  width: 100%;
+                }
+              }
+            }   
+          }
+        }
+      }
+    }
+  }
+  /* FINE GET IN TOUCH */
 }
-
-
