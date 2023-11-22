@@ -188,6 +188,21 @@
     }
   }
 /* FINE BEST DEAL */
+
+  .container-center{
+    
+    .cont-aptmts-toSell{
+
+      .cont-cards-aptmts-toSell{
+        gap: 0px;
+        .card{
+          min-width: 250px ;
+          margin: 10px;
+        }
+      }
+    }
+  }
+
   .cont-get-in-touch{
     margin-bottom: 750px;
     
